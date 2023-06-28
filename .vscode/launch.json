@@ -12,7 +12,7 @@
             "console": "integratedTerminal",
             "cwd": "${workspaceFolder}",
             "justMyCode": false,
-            "env": {"PYTHONPATH": "${workspaceFolder}/${pathSeparator}${env:PYTHONPATH}"}
+            "env": {"PYTHONPATH": "${workspaceFolder}/src${pathSeparator}${env:PYTHONPATH}"},
         },
         {
             "name": "Current streamlit file",
@@ -21,7 +21,7 @@
             "module": "streamlit",
             "args": ["run", "${file}"],
             "cwd": "${workspaceFolder}",
-            "env": {"PYTHONPATH": "${workspaceFolder}/${pathSeparator}${env:PYTHONPATH}"}
+            "env": {"PYTHONPATH": "${workspaceFolder}/src${pathSeparator}${env:PYTHONPATH}"},
         }
     ]
 }
